@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="<% settings.charset %>">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+	<title>Traductor de texto a braille</title>
+	<link rel="stylesheet" href="<% request.uri_base %>/css/bootstrap.min.css">
+	<link rel="stylesheet" href="<% request.uri_base %>/css/styles.css">
+</head>
+
+<body class="container">
+	<% content %>
+	<div id="footer">
+		Creado con <a href="http://perldancer.org/">Dancer2</a> <% dancer_version %>
+	</div>
+
+	<!-- Grab jQuery from a CDN, fall back to local if necessary -->
+	<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript">/* <![CDATA[ */
+	    !window.jQuery && document.write('<script type="text/javascript" src="<% request.uri_base %>/javascripts/jquery.js"><\/script>')
+	/* ]]> */</script>
+	<script src="<% request.uri_base %>/javascripts/bootstrap.min.js"></script>
+	<script src="<% request.uri_base %>/javascripts/braille.js"></script>
+	<script src="<% request.uri_base %>/javascripts/scripts.js"></script>
+</body>
+</html>

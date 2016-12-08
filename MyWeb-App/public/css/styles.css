@@ -1,0 +1,12 @@
+#text-section {
+	margin: 50px 0;
+}
+
+#braille-section {
+	margin: 75px 0;
+}
+
+#braille-section textarea{
+	font-weight: bold;
+	font-size: 32px;
+}
